@@ -1,0 +1,383 @@
+.disclaimer {
+    position: relative;
+    background-color: #cff4fc;
+    width: 90%;
+    max-width: 600px;
+    margin: 1rem auto;
+    color: #333;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .disclaimer h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #2f2f4f;
+  }
+  
+  .disclaimer p {
+    font-size: 16px;
+    margin: 5px 0;
+    color:#2f2f4f;
+  }
+  
+  .disclaimer a {
+    color: #2f2f4f;
+    text-decoration: underline;
+  }
+  
+  .disclaimer a:hover {
+    color: #1b1b2e; /* Change color on hover */
+  }
+  
+  .pet-finder-container {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff, #eafaf1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  
+  
+    .message{
+      font-size: 18px;
+    }
+  
+    .language-selector {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-bottom: 1rem; 
+      z-index: 1; 
+    
+      .language-label {
+        margin-right: 0.5rem;
+      }
+    
+      select {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #fff;
+        color: #333;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    
+        &:hover {
+          border-color: #4caf50;
+        }
+    
+        &:focus {
+          outline: none;
+          border-color: #4caf50;
+          box-shadow: 0 0 4px rgba(76, 175, 80, 0.6);
+        }
+      }
+    }
+  
+    .title {
+        font-size: 2.5rem;
+        color: #4caf50;
+        margin-bottom: 1.5rem;
+        font-family: 'Poppins', sans-serif;
+    }
+  
+    .input-section {
+        margin-bottom: 2rem;
+        text-align: left;
+  
+        .input-label {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #555;
+            font-weight: 600;
+        }
+  
+        .input-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+  
+            input {
+                flex: 1;
+                padding: 0.8rem;
+                border: 2px solid #ddd;
+                border-radius: 8px;
+                font-size: 1rem;
+                margin-right: 0.5rem;
+                transition: border-color 0.3s;
+  
+                &:focus {
+                    border-color: #4caf50;
+                    outline: none;
+                }
+  
+                &.ng-invalid.ng-touched {
+                    border-color: #f44336; /* Red border for invalid input */
+                }
+            }
+  
+            .primary-button {
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+                background-color: #4caf50;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+  
+                &:hover {
+                    background-color: #43a047;
+                }
+            }
+        }
+  
+        .validation-message {
+            color: #f44336; /* Red for error messages */
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            text-align: left; /* Align messages to the left */
+        }
+    }
+  
+    .qr-section {
+      margin-top: 1.5rem;
+      text-align: center;
+    
+      .secondary-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        background-color: #2196f3;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    
+        &:hover {
+          background-color: #1976d2;
+        }
+    
+        &.disabled {
+          background-color: #bdbdbd;
+          cursor: not-allowed;
+          box-shadow: none;
+        }
+    
+        &:disabled {
+          background-color: #bdbdbd;
+          color: #fff;
+          cursor: not-allowed;
+        }
+      }
+    
+  
+        .scanned-code-section {
+            margin-top: 1rem;
+            text-align: left;
+  
+            h2 {
+                font-size: 1.2rem;
+                color: #333;
+  
+                span {
+                    color: #2196f3;
+                    font-weight: bold;
+                }
+            }
+  
+            .primary-button {
+                margin-top: 0.5rem;
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+  
+                &:hover {
+                    background-color: #43a047;
+                }
+            }
+        }
+    }
+  
+    .ngx-spinner {
+      background-color: rgba(0, 0, 0, 0.7) !important; // Dark background with transparency
+      border-radius: 10px; // Rounded corners
+    
+      // Customize the spinner types if needed
+      &.ball-scale-multiple {
+        .ball {
+          background-color: #ff4081; // Custom ball color
+        }
+      }
+    }
+    
+    // Optional: Customize the loading text style
+    .ngx-spinner p {
+      color: #ffffff; // White text color
+      font-size: 1.2rem; // Adjust font size
+      font-weight: bold; // Make text bold
+      position: fixed; // Fix the position of the spinner
+      top: 50%; // Center it vertically
+      left: 50%; // Center it horizontally
+      transform: translate(-50%, -50%); // Adjust position to truly center
+      z-index: 9999; // Ensure it stays above other elements
+    }
+  
+    .pet-info {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      background-color: #f1f8e9;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    
+      h2 {
+        font-size: 1.8rem;
+        color: #4caf50;
+        margin-bottom: 1.5rem;
+        font-family: 'Poppins', sans-serif;
+      }
+    
+      .pet-info-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
+          tr {
+            th {
+              padding: 1rem;
+              text-align: left;
+              font-size: 1rem;
+              font-weight: bold;
+              text-transform: uppercase;
+              letter-spacing: 0.05rem;
+            }
+          }
+        }
+    
+        tbody {
+          tr {
+            &:nth-child(even) {
+              background-color: #f9f9f9;
+            }
+  
+            &:nth-child(odd) {
+              background-color: #eafad8;
+            }         
+    
+            &:hover {
+              background-color: #e8f5e9;
+            }
+    
+            td {
+              padding: 0.8rem;
+              text-align: left;
+              font-size: 1.15rem;
+              color: #555;
+              border-bottom: 1px solid #ddd;
+    
+              &:first-child {
+                font-weight: bold;
+                color: #333;
+                text-transform: capitalize;
+              }
+            }
+        }
+      }
+    }  
+  } 
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .disclaimer {
+      padding: 1.5rem;
+      width: 80%;
+  }
+  
+  .pet-finder-container {
+    padding: 1.5rem;
+    width: 80%;
+    size: 100px;
+  }
+    
+  .pet-info-table {
+    font-size: 0.9rem;
+  
+    thead {
+      tr {
+        th {
+          font-size: 0.85rem;
+          padding: 0.8rem;
+        }
+      }
+    }
+  
+    tbody {
+      tr {
+        td {
+          padding: 0.6rem;
+        }
+      }
+    }
+  }
+  
+    .language-selector {
+      justify-content: center;
+      margin-bottom: 1rem;
+  
+      select {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+      }
+    }
+  
+    .title {
+        font-size: 2rem;
+    }
+  
+    .input-section .input-wrapper {
+        flex-direction: column;
+        align-items: center;
+  
+        input {
+            margin-bottom: 1rem;
+            width: 80%;
+        }
+  
+        .primary-button {
+            width: 80%;
+        }
+    }
+  
+    .qr-section .secondary-button {
+        width: 80%;
+    }
+  
+    .qr-section .scanned-code-section h2 {
+        font-size: 1rem;
+    }
+  
+    .pet-info h2 {
+        font-size: 1.3rem;
+    }
+  
+    .pet-info .info-item {
+        font-size: 0.9rem;
+    }
+  }
