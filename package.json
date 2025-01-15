@@ -14,7 +14,8 @@
     "react-spinkit": "^3.0.0",
     "sass": "^1.83.4",
     "typescript": "^5.7.3",
-    "web-vitals": "^4.2.4"
+    "web-vitals": "^4.2.4",
+    "proxy": "http://localhost:3000"
   },
   "scripts": {
     "start": "cross-env PORT=4200 react-scripts start",
