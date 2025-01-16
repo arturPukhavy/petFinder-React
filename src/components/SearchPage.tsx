@@ -144,8 +144,10 @@ const SearchPage: React.FC = () => {
 
             {/* Spinner */}
             {loading ? (
-              <Spinner name="ball-scale-multiple" fadeIn="none" />
-            //   <p>{currentTranslations.spinner}...</p>
+              <div className="spinner-container">
+                <Spinner name="ball-scale-multiple" fadeIn="none" />
+                <p>{currentTranslations.spinner}...</p>
+              </div>
             ) : null}
 
             {/* Pet Info Section */}
