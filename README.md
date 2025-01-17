@@ -55,7 +55,7 @@ Install latest version from Android Studio [website](https://developer.android.c
 npm install --legacy-peer-deps
 ```
 
-**Build the Angular application**:
+**Build the React application**:
 ```bash
 npm run build
 ```
